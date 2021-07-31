@@ -232,6 +232,33 @@ header nav ul li a:hover {
     font-size: smaller;
     opacity: 0;
 }
+
+.minor-section {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color1);
+}
+
+.minor h1 {
+    font-size: 3vw;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--color2);
+}
+
+.contact img {
+    width: 3vw;
+}
 /* end reach me section styles  */
 
 /* footer styles  */
