@@ -162,7 +162,7 @@ header nav ul li a:hover {
 }
 
 .big-card {
-    background-image: url(../images/run-buddy.jpg);
+    background-image: url('../images/run-buddy.jpg');
     background-size: cover;
     height: 20vw;
     width: 73.7%;
@@ -199,7 +199,7 @@ header nav ul li a:hover {
 }
 
 .lil-card {
-    background-image: url(../images/code-refactor.jpg);
+    background-image: url('../images/code-refactor.jpg');
     background-size: cover;
     height: 10vw;
     width: 35%;
@@ -209,7 +209,7 @@ header nav ul li a:hover {
 }
 
 .img3 {
-    background-image: url(../images/pro-portfolio.jpg);
+    background-image: url('../images/pro-portfolio.jpg');
     background-size: cover;
     height: 10vw;
     width: 35%;
