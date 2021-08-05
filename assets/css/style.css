@@ -1,11 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 :root {
-    --color1: rgb(29, 29, 29);
+    --color1: rgb(15, 15, 15);
     --color2: seashell;
     --color3: rgb(253, 224, 57);
 }
@@ -23,64 +23,78 @@ body {
 /* header styles  */
 header {
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../images/headshot.jpg');
-    background-size: 100%;
+    background-size: cover;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
-#title {
+#name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color2);
+    /* text-shadow: -5px -5px 5px rgba(0, 0, 0, 0.5); */
+    margin-top: 40px;
+}
+
+#name h1 {
+    padding: 10px 80px;
+    border-bottom: solid 2px var(--color3);
+}
+
+#name h1 a {
+    font-size: 3.5vw;
+    color: var(--color2);
+    text-decoration: none;
+}
+
+#name h2 {
+    padding: 15px;
+    font-size: 1.4vw;
+    font-weight: lighter;
+}
+
+#intro-block {
     display: flex;
     justify-content: space-between;
     align-content: center;
     height: 100%;
+    width: 70%;
+    margin: 0 auto;
 }
 
-#name {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35%;
-    font-size: 2vw;
-    color: var(--color2);
-    text-shadow: -5px -5px 5px rgba(0, 0, 0, 0.5);
-}
-
-#name h1 a {
-    color: var(--color2);
-    text-decoration: none;
-    margin-left: 40px;
-}
-
-#intro {
+.sub-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 35%;
-    text-align: right;
+    align-items: center;
     font-size: 1vw;
-    color: var(--color2);
 }
 
-#intro h2 {
-    font-size: 2vw;
-    text-shadow: -3px -3px 5px rgba(0, 0, 0, 0.5);
-    margin-right: 70px;
+.sub-block img {
+    width: 4vw;
 }
 
-#intro p {
-    margin-right: 70px;
+.sub-block h3 {
+    margin-top: 18px;
+    font-weight: lighter;
 }
 
 header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-bottom: 50px;
+    height: 10%;
 }
 
 header nav ul {
     display: flex;
     justify-content: center;
+    align-items: center;
     list-style: none;
 }
 
@@ -124,10 +138,16 @@ header nav ul li a:hover {
 
 .content-block {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     width: 60%;
     color: var(--color2);
-    font-size: 1vw;
+}
+
+.content-block p {
+    line-height: 1.5;
+    font-size: 1.3vw;
+    margin: 1.5vw;
 }
 /* end about section styles  */
 
@@ -270,3 +290,129 @@ footer {
     padding: 10px;
 }
 /* end footer styles */
+
+/* Media Query for smaller desktops and smaller */
+@media screen and (max-width: 980px) {
+    /* header  */
+    header {
+        background-size: 150%;
+        background-position: 50% 10%;
+    }
+
+    #name h1 a {
+        font-size: 5vw;
+        /* color: red; */
+    }
+
+    #name h2 {
+        font-size: 2.5vw;
+    }
+
+    header nav ul li a {
+        font-size: 3vw;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    header {
+        background-size: 200%;
+    }
+
+    #name h1 a {
+        /* color: green; */
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    header {
+        background-size: 350%;
+        background-position: 45% 10%;
+    }
+
+    #name h1 {
+        padding: 10px 50px;
+    }
+
+    #name h1 a {
+        /* color: hotpink; */
+        font-size: 45px;
+    }
+
+    #name h2 {
+        font-size: 22px;
+    }
+
+    #intro-block {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .sub-block img {
+        width: 12vw;
+    }
+
+    .sub-block h3 {
+        font-size: 16px;
+    }
+
+    header nav ul li a {
+        font-size: 22px;
+    }
+
+    .major-section, .major-section-inverse, .minor-section {
+        flex-direction: column;
+    }
+
+    .section-title h1, .section-title-minor h1 {
+        transform: none;
+        font-size: 40px;
+        font-weight: lighter;
+        border-bottom:solid 2px var(--color3);
+        color: var(--color2);
+        margin: 30px;
+    }
+
+    .section-title-inverse h1 {
+        transform: none;
+        font-size: 40px;
+        font-weight: lighter;
+        border-bottom:solid 2px var(--color3);
+        color: var(--color1);
+        margin: 20px;
+    }
+
+    .content-block p {
+        font-size: 18px;
+    }
+
+    .creations-block {
+        width: 90%;
+        height: 40%;
+    }
+
+    .big-card {
+        background-image: url('../images/run-buddy.jpg');
+        background-size: cover;
+        height: 50%;
+        border: solid 2px var(--color1);
+        margin: 1vw;
+        text-decoration: none;
+    }
+
+    .lil-card {
+        height: 40%;
+    }
+
+    .hover span {
+        padding: 10px;
+        display: block;
+        background-color: var(--color1);
+        border-radius: 7px;
+    }
+
+    .contact img {
+        width: 40px;
+    }
+}
