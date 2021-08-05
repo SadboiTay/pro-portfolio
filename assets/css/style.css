@@ -374,6 +374,10 @@ footer {
         flex-direction: column;
     }
 
+    .section-title, .section-title-inverse {
+        width: 100%;
+    }
+
     .section-title h1, .section-title-minor h1 {
         transform: none;
         font-size: 40px;
