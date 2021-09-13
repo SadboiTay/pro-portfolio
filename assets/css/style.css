@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif
 }
 
 :root {
@@ -18,6 +17,7 @@ html, body {
 body {
     /* background-color:  var(--color1); */
     color: var(--color2);
+    font-family: "Raleway", sans-serif;
 }
 
 /* header styles  */
@@ -43,6 +43,7 @@ header {
 #name h1 {
     padding: 10px 80px;
     border-bottom: solid 2px var(--color3);
+    font-family: "Julius Sans One", sans-serif;
 }
 
 #name h1 a {
@@ -55,6 +56,7 @@ header {
     padding: 15px;
     font-size: 1.4vw;
     font-weight: lighter;
+    font-family: "Julius Sans One", sans-serif;
 }
 
 #intro-block {
@@ -182,7 +184,7 @@ header nav ul li a:hover {
 }
 
 .big-card {
-    background-image: url('../images/run-buddy.jpg');
+    background-image: url('../images/gitnshape.PNG');
     background-size: cover;
     height: 20vw;
     width: 73.7%;
@@ -219,7 +221,7 @@ header nav ul li a:hover {
 }
 
 .lil-card {
-    background-image: url('../images/code-refactor.jpg');
+    background-image: url('../images/weatherdashboard.PNG');
     background-size: cover;
     height: 10vw;
     width: 35%;
@@ -229,7 +231,7 @@ header nav ul li a:hover {
 }
 
 .img3 {
-    background-image: url('../images/pro-portfolio.jpg');
+    background-image: url('../images/workdayscheduler.PNG');
     background-size: cover;
     height: 10vw;
     width: 35%;
