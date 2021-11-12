@@ -1,6 +1,7 @@
 # pro-portfolio
 A personal showcase of my developer projects, skills. and design tastes.
-! THIS PROJECT HAS BEEN SUPERCEDED BY PORTFOLIO2.0
+
+* ! THIS PROJECT HAS BEEN SUPERCEDED BY PORTFOLIO2.0
   https://github.com/SadboiTay/portfolio2.0 !
 
 ## made with
